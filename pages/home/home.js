@@ -7,12 +7,27 @@ Page({
   data: {
     name:"张淑和",
     age:45,
+    count:0,
     students:[
       {id:100,name:"whatwhat",age:34},
       {id:101,name:"tom",age:32},
       {id:102,name:"Bill",age:31},
       {id:103,name:"Bulang",age:24}
     ]
+
+  },
+  //事件监听之计数增加
+  addCount(){
+    this.setData({
+      count:this.data.count+=1
+    })
+
+  },
+  //事件监听之计数减少
+  cutCount(){
+    this.setData({
+      count:this.data.count-=1
+    })
 
   },
   addNum(){

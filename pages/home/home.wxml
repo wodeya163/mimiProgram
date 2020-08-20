@@ -2,7 +2,11 @@
 <!--数据绑定：{{}} Mustache-->
 <view>hello {{name}}</view>
 <view>我的年龄：{{age}}</view>
-<!--列表数据渲染：wx:for="{{变量名称}}" Mustache语法-->
+<!--列表数据渲染：wx:for="{{变量名称}}"Mustache-->
 <view wx:for="{{students}}" wx:key="index">
   <view>姓名：{{item.name}}——年龄：{{item.age}}</view>
 </view>
+<!--事件监听-->
+<view>当前计数：{{count}}</view>
+<button type="primary" size="mini" bindtap="addCount">count计数增加</button>
+<button type="primary" size="mini" bindtap="cutCount">count计数减少</button>
