@@ -1,4 +1,4 @@
 <!--pages/home/home.wxml-->
 <text>上班第{{day}}天</text>
 <button size="mini" type="primary" bindtap="addNum">增加</button>
-<view>数据绑定</view>
+<view>知识点1：数据绑定</view>
