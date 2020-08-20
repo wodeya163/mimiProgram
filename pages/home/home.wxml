@@ -1,4 +1,8 @@
 <!--pages/home/home.wxml-->
-<text>上班第{{day}}天</text>
-<button size="mini" type="primary" bindtap="addNum">增加</button>
-<view>知识点1：数据绑定</view>
+<!--数据绑定：{{}} Mustache-->
+<view>hello {{name}}</view>
+<view>我的年龄：{{age}}</view>
+<!--列表数据渲染：wx:for="{{变量名称}}" Mustache语法-->
+<view wx:for="{{students}}" wx:key="index">
+  <view>姓名：{{item.name}}——年龄：{{item.age}}</view>
+</view>

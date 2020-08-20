@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    day:0
+    name:"张淑和",
+    age:45,
+    students:[
+      {id:100,name:"whatwhat",age:34},
+      {id:101,name:"tom",age:32},
+      {id:102,name:"Bill",age:31},
+      {id:103,name:"Bulang",age:24}
+    ]
 
   },
   addNum(){
