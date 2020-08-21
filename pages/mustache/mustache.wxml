@@ -1,0 +1,10 @@
+<!--pages/mustache/mustache.wxml-->
+<!--Mustache语法-->
+<view>{{message}}</view>
+<view>{{firstname}}{{lastname}}</view>
+<view>{{firstname+''+lastname}}</view>
+<view>{{age>18?'成年人':'未成年人'}}</view>
+<view>{{nowtime}}</view>
+<view class="container {{isActive?'active':''}}">我不是小孩子了</view>
+<button size="mini" type="primary" bindtap="changeSize">点我哦</button>
+
