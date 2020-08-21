@@ -1,4 +1,10 @@
-<!--pages/home/home.wxml-->
-<text>上班第{{day}}天</text>
-<button size="mini" type="primary" bindtap="addNum">增加</button>
-<view>数据绑定</view>
+<view>
+	<view class="view-image">
+		<image mode="aspectFit" src="{{avatarUrl}}" />
+	</view>
+	<view class="view-text">
+		<text>{{nickName}}</text>
+	</view>
+	<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="mini" type="primary">授权
+	</button>
+</view>

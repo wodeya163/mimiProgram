@@ -3,5 +3,13 @@
     "pages/home/home",
     "pages/about/about"
   ],
-  "sitemapLocation": "sitemap83.json"
+  "sitemapLocation": "sitemap83.json",
+  "window": {
+    "navigationBarBackgroundColor": "#9C279E",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
 }

@@ -1,1 +1,16 @@
 /* pages/home/home.wxss */
+.view-image{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.view-image image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.view-text{
+  display: flex;
+  justify-content: center;
+}
