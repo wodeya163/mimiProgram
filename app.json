@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/scrol/scrol",
+    "pages/text/text",
+    "pages/input/input",
     "pages/home/home",
     "pages/about/about"
   ],
