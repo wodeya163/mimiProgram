@@ -1,0 +1,22 @@
+<!--pages/for/for.wxml-->
+<!--遍历对象-->
+<view>
+    <view wx:for="{{students}}" wx:key="index">
+        {{item.id}}、{{item.name}}{{item.age}}
+    </view>
+      
+</view>
+<!--遍历字符串-->
+<view>
+    <view wx:for="{{str}}" wx:key="index">
+        {{item}}
+    </view>
+      
+</view>
+<!--遍历数字-->
+<view>
+    <view wx:for="{{number}}" wx:key="index">
+        {{item+1}}
+    </view>
+      
+</view>
