@@ -1,0 +1,2 @@
+<!--component/my-event/my-event.wxml-->
+<button bind:tap="clickAdd">点击+1</button>

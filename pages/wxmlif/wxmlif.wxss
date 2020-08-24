@@ -1,0 +1,4 @@
+/* pages/wxmlif/wxmlif.wxss */
+.viewShow{
+    font-size: 60rpx;
+}

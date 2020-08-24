@@ -1,0 +1,9 @@
+var format=function (price,number){
+    var number = number||2
+    var priceNow=parseFloat(price)
+    return priceNow.toFixed(number)
+
+}
+module.exports={
+    format:format
+}

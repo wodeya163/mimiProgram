@@ -1,0 +1,6 @@
+<!--component/student-card/student-card.wxml-->
+<view>
+    <view>{{students.name}}</view>
+    <view>{{students.age}}</view>
+    <view>{{students.gender}}</view>
+</view>
