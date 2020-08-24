@@ -1,0 +1,13 @@
+<!--pages/input/input.wxml-->
+<!--input的基本使用-->
+<input class="input"/>
+<!--input的常见属性-->
+<input class="input" value="初始值"></input>
+<!--input键盘类型-->
+<input class="input" type="number"></input>
+<!--input password-->
+<input class="input" password></input>
+<!--input placeholder-->
+<input class="input" placeholder="请输入内容"></input>
+<!--input 事件绑定-->
+<input class="input"></input>

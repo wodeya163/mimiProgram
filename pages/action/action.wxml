@@ -1,0 +1,47 @@
+<!--pages/action/action.wxml-->
+<!--小程序的事件绑定-->
+<view>
+	<view>{{container}}</view>
+	<button bindtap="touchChange">数字增加</button>
+</view>
+<view>
+	<view
+	 class="viewContainer"
+	 bind:touchstart="handerTouchStart"
+	 bind:touchmove="handerTouchMove"
+	 bind:touchend="handerTouchEnd"
+	 bind:tap="handerTap"
+	 bind:longpress="handerLongPress"
+	>{{container}}
+	</view>
+	<button bindtap="touchChange">数字增加</button>
+</view>
+<!--事件对象的分析-->
+<button id="button" bind:tap='handerEvent'>事件对象</button>
+<view>
+	<view
+	 class="boxA"
+	 bind:tap="handTapW"
+	 id='外层'
+	>外层
+		<view
+		 class="boxB"
+		 bind:tap="handTapN"
+		 id='内层'
+		>内层
+		</view>
+	</view>
+</view>
+
+<view class="containerBox">
+	<block wx:for="{{croos}}" wx:key='index'>
+		<view
+		 class="boxItem"
+		 bind:tap='handClick'
+		 data-index='{{index}}'
+		 data-item='{{item}}'
+		>{{item}}
+		</view>
+	</block>
+</view>
+<view>你点击了：{{itemShow}}</view>
