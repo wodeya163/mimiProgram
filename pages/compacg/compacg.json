@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "mycon":"/component/mycon/mycon",
+    "my-prop":"/component/myprop/myprop",
+    "student-card":"/component/student-card/student-card"
+
+  }
 }

@@ -1,2 +1,14 @@
 <!--pages/compacg/compacg.wxml-->
-<text>pages/compacg/compacg.wxml</text>
+<block wx:for='{{5}}' wx:key='index'>
+	<mycon />
+</block>
+<block wx:fof="{{3}}" wx:key="index">
+	<my-prop title='{{title}}' content="{{content}}" />
+</block>
+<view class="viewStudents" >
+	<block wx:for="{{students}}" wx:key='index'>
+		<view class="viewStudent">
+			<student-card students="{{item}}" />
+		</view>
+	</block>
+</view>
