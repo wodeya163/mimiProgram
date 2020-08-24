@@ -1,0 +1,18 @@
+<!--pages/template/template.wxml-->
+<import src="/templateFile/container.wxml"></import>
+<view>模板的使用，定义好的模板在未使用的时候不会被渲染</view>
+<template name="container">
+    <view>
+        {{str}}
+    </view>
+    <button size="mini" type="primary">{{btnTxt}}</button>     
+</template>
+<view>--------模板的使用-------</view>
+<view>
+   <template is="container" data="{{str:'模板的使用',btnTxt:'提示'}}"/>
+</view>
+<!--在单独的模板文件中定义模板,以保证模板可以在多个页面中使用-->
+<view>-----在单独的模板文件中定义模板,以保证模板可以在多个页面中使用-----</view>
+<view>
+   <template is="container" data="{{str:'这是从别的文件引入的模板',btnTxt:'引入的模板'}}"/>
+</view>
