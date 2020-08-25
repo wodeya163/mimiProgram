@@ -1,0 +1,10 @@
+/* pages/tab/tab.wxss */
+.textName{
+  font-size: 50rpx;
+}
+.counter{
+  font-size: 50rpx;
+}
+.slotView{
+  display: flex;
+}

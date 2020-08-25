@@ -1,0 +1,2 @@
+<!--component/myboxcon/myboxcon.wxml-->
+<view class="viewBox">我是被组件调用的组件</view>

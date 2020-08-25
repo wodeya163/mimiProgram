@@ -1,0 +1,10 @@
+<!--pages/wxss/wxss.wxml-->
+<!--设置样式的三种方式-->
+<!--1、内联样式-->
+<view style="color:red;font-size:32px;">这是一个小程序页面</view>
+<!--2、页内样式，通过class属性在wxss文件中进行定义-->
+<view class="box">这是一个小程序页面</view>
+<!--3、全局样式，通过class属性在app.wxss文件中进行定义-->
+<view class="container">这是一个小程序页面</view>
+<!--4、三种样式中，行内内联样式优先级最高，页内样式次之，全局样式优先级最低-->
+

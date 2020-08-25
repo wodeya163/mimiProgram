@@ -1,0 +1,29 @@
+<!--pages/wxs/wxs.wxml-->
+
+<!--wxs的定义,实际使用时，应把wxs模块抽离-->
+<!-- <wxs module="info">
+	var message = 'hello world';
+	var name = 'codewhy';
+	var num = function(num1,num2){
+	return num1+num2
+	}
+  function test(){
+    return '小程序测试'
+  }
+	module.exports={
+	message:message,
+	name:name,
+	num:num,
+  test:test
+	}
+</wxs> -->
+<!--引入wxs标签的方式，书写wxs的单标签，后面跟SRC，还要写上module名称-->
+<wxs src='../../wxs/info.wxs' module='info'/>
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.num(20,30)}}</view>
+<view>{{info.test()}}</view>
+
+<wxs src='../../wxs/format.wxs' module='format'/>
+<view>{{format.format(price,2)}}</view>
+

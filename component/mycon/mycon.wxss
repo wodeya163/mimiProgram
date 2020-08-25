@@ -1,0 +1,12 @@
+/* component/mycon/mycon.wxss */
+.title{
+  color: rgb(255, 0, 76);
+  font-size: 50rpx;
+  font-weight: 600;
+
+}
+.content{
+  font-size: 30rpx;
+  color: rgb(34, 0, 255);
+  font-weight: 500;
+}

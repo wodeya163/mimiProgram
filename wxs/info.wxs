@@ -1,0 +1,15 @@
+//在wxs文件中，要像写js代码一样写wxs代码，无需再写wxs标签
+	var message = 'hello world';
+	var name = 'codewhy';
+	var num = function(num1,num2){
+	return num1+num2
+	}
+  function test(){
+    return '小程序测试'
+  }
+	module.exports={
+	message:message,
+	name:name,
+	num:num,
+  test:test
+	}

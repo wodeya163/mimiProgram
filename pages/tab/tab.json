@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "my-tabcontrol":"/component/my-tabcontrol/my-tabcontrol",
+    "my-counter":"/component/my-counter/my-counter",
+    "my-slot":"/component/my-slot/my-slot",
+    "my-mslot":"/component/my-mslot/my-mslot"
+  }
+}
