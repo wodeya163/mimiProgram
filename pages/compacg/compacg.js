@@ -1,17 +1,27 @@
-// pages/home/home.js
+// pages/compacg/compacg.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
-
-  },
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
+    title:['第一个标题','第二个标题','第三标题'],
+    content:['内容1','内容2','内容3'],
+    students:[{
+      name:'张三',
+      age:35,
+      gender:'男'
+    },
+    {
+      name:'李二婶',
+      age:45,
+      gender:'女'
+    },
+    {
+    name:'王小二',
+    age:25,
+    gender:'男'
+    },]
 
   },
 
@@ -19,13 +29,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
 
   },
 

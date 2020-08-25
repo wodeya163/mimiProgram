@@ -1,17 +1,34 @@
-// pages/home/home.js
+// pages/tab/tab.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
+    titles:['流行','新款','精选'],
+    name:""
 
   },
-  addNum(){
+  //获得点击信息
+  getTabInfo(event){
+    //console.log(event)
+    var index = event.detail.index
     this.setData({
-      day:this.data.day+1
+      name:event.detail.titles[index]
     })
+
+  },
+  //从页面来改变组件内的变量的值（此方法不合理，不推荐使用）
+  changeConValue(){
+    const counterName=this.selectComponent('#counter-id')
+    //var counterValue=counterName.data.counter
+    /* console.log(counterName)
+    console.log(counterValue)
+    counterName.setData({
+      counter:counterValue+20
+    }) */
+    //调用组件内部的方法
+    counterName.changeCounter(5)
 
   },
 
@@ -19,13 +36,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
 
   },
 

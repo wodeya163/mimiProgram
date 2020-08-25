@@ -1,0 +1,27 @@
+<!--pages/tab/tab.wxml-->
+<view>
+      <my-tabcontrol titles="{{titles}}" bind:clickIndex="getTabInfo"/>
+</view>
+<text class="textName">你点击了：{{name}}</text>
+<view class="counter">
+   <button bind:tap="changeConValue">页面按钮点击改变组件内对象的值</button>
+   <my-counter id="counter-id"/>
+</view>
+<!--单插槽使用-->
+<my-slot>
+<button>按钮</button>
+</my-slot>
+<!--单插槽使用-->
+<my-slot>
+<button>按钮</button>
+</my-slot>
+<!--多插槽使用:
+    注意事项：
+    1、在插槽组件定义时给每个插槽增加name属性，然后在使用插槽是定义slot属性值，使slot属性值等于name属性值。
+    2、在插槽组件js文件中定义：options:{
+       multipleSlots:true},-->
+<my-mslot class="slotView">
+   <button slot="slot1">插入的按钮1</button>
+   <button slot="slot2">插入的按钮2</button>
+   <button slot="slot3">插入的按钮3</button>
+</my-mslot>

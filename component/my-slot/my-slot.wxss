@@ -1,0 +1,8 @@
+/* component/my-slot/my.wxss */
+.viewSlot{
+  display: flex;
+}
+.slotItem{
+  flex: 1;
+  
+}

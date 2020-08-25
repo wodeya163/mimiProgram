@@ -1,0 +1,9 @@
+<!--component/my-slot/my.wxml-->
+<!--单插槽定义-->
+<view>标题头</view> 
+       <slot/>
+<view>标题尾</view>
+
+
+
+

@@ -1,17 +1,11 @@
-// pages/home/home.js
+// pages/template/template.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
-
-  },
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
+    str:"先定义模板，然后才能使用模板，定义模板需设定模板的name属性，使用模板需使用is属性，is属性为定义模板name的属性值"
 
   },
 
@@ -19,13 +13,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
 
   },
 

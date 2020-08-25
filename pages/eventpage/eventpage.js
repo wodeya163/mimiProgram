@@ -1,31 +1,26 @@
-// pages/home/home.js
+// pages/eventpage/eventpage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
+    count:0
 
   },
-  addNum(){
+  //点击按钮以让count的值每次加1
+  clickAdd(event){
     this.setData({
-      day:this.data.day+1
+      count:this.data.count+1
     })
-
+    console.log(event)
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
 
   },
 

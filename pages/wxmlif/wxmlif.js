@@ -1,16 +1,27 @@
-// pages/home/home.js
+// pages/wxmlif/wxmlif.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
+    message:'今天天气真好！',
+    isShow:false,
+    score:55,
+    ifShow:false
+
 
   },
-  addNum(){
+  //isShow切换
+  changeShow(){
     this.setData({
-      day:this.data.day+1
+      isShow:!this.data.isShow
+    })
+  },
+  //score变化
+  changeScore(){
+    this.setData({
+      score:this.data.score+5
     })
 
   },
@@ -19,13 +30,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
 
   },
 

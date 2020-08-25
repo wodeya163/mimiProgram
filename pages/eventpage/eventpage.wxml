@@ -1,0 +1,3 @@
+<!--pages/eventpage/eventpage.wxml-->
+<view>count:{{count}}</view>
+<my-event bind:getClick="clickAdd"/>

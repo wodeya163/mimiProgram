@@ -1,0 +1,10 @@
+/* component/myprop/myprop.wxss */
+.mypropTitle{
+  color: rgb(255, 0, 247);
+  font-size: 30rpx;
+
+}
+.mypropContent{
+  color: cyan;
+  
+}

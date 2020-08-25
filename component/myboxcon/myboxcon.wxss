@@ -1,0 +1,4 @@
+/* component/myboxcon/myboxcon.wxss */
+.viewBox{
+  background-color: brown;
+}

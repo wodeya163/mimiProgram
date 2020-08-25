@@ -1,17 +1,10 @@
-// pages/home/home.js
+// pages/wxss/wxss.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
-
-  },
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
 
   },
 
@@ -19,13 +12,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
 
   },
 

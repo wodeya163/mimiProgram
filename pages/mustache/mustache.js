@@ -1,16 +1,22 @@
-// pages/home/home.js
+// pages/mustache/mustache.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
+    message:'今天不会下雨',
+    firstname:'张',
+    lastname:'淑和',
+    age:25,
+    nowtime:new Date().toLocaleString(),
+    isActive:false
+
 
   },
-  addNum(){
+  changeSize(){
     this.setData({
-      day:this.data.day+1
+      isActive:!this.data.isActive
     })
 
   },
@@ -19,13 +25,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://www.salien-jd.com',
-      success:(res)=>{
-        console.log(res)
-      }
-    })
-    
+    setInterval(()=>{
+      this.setData({
+        nowtime:new Date().toLocaleString()
+
+      })
+    },1000)
 
   },
 
