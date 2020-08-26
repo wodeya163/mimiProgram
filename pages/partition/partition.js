@@ -1,35 +1,17 @@
-// pages/home/home.js
-import {getMultiData} from "../../service/reqhome.js"
+// pages/partition/partition.js
 Page({
 
   /**
    * 页面的初始数据
    */
-data: {
-  banners:[],
-  recommends:[]
-    
+  data: {
 
   },
-  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //1、请求网络，获取数据
-     getMultiData().then(res=>{
-       const banners=res.data.data.banner.list
-       const recomends=res.data.data.recommend.list
-         this.setData({
-         banners:banners,
-         recommends:recomends
-       }) 
-
-       //console.log(res)
-     })
-    
-    
 
   },
 

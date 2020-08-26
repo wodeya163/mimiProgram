@@ -1,0 +1,6 @@
+<!--components/h-recommend/h-recommend.wxml-->
+<view>
+    <image src="{{item.image}}"></image>
+    <view>{{item.title}}</view>
+</view>
+

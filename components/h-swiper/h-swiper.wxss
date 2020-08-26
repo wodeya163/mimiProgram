@@ -1,0 +1,5 @@
+/* components/h-swiper/h-swiper.wxss */
+.swiper-item .item-image{
+  width: 100%;
+  height: auto;
+}

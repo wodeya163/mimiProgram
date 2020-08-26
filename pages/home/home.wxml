@@ -1,4 +1,9 @@
 <!--pages/home/home.wxml-->
-<text>上班第{{day}}天</text>
-<button size="mini" type="primary" bindtap="addNum">增加</button>
-<view>数据绑定</view>
+<!--轮播图展示数据-->
+	<h-swiper list="{{banners}}"/>
+<!--推荐数据展示-->
+	<view class="recommend">
+	    <block wx:for="{{recommends}}" wx:key="index">
+			     <h-recommend item="{{item}}" class="recommend-item"/>
+			</block>
+	</view>

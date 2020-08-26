@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "navigationBarTitleText": "购物街",
+  "usingComponents": {
+    "h-swiper":"/components/h-swiper/h-swiper",
+    "h-recommend":"/components/h-recommend/h-recommend"
+  }
 }
