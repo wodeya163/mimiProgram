@@ -1,0 +1,5 @@
+<!--component/mycon/mycon.wxml-->
+<!--如果一个组件需要在多个页面中进行调用，可以将这个组件在app.json文件中进行全局注册-->
+<view class="title">{{title}}</view>
+<view class="content">{{content}}</view>
+<mybox-con/>

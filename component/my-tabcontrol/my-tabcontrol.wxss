@@ -1,0 +1,21 @@
+/* component/my-tabcontrol/my-tabcontrol.wxss */
+.viewTitles{
+  display: flex;
+  height: 80rpx;
+ 
+ 
+}
+.viewItem{
+  flex: 1;
+  font-size: 40rpx;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.active{
+  color: rgb(255, 38, 0);
+  
+}
+.active .textItem{
+  padding: 20rpx 15rpx;
+  border-bottom: blue 5rpx solid;
+}

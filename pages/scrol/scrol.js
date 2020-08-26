@@ -1,25 +1,14 @@
-// pages/home/home.js
+// pages/scrol/scrol.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
 
   },
-  //跳转到详情方法执行
-  gotoDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=首页',
-    })
-
-  },
-  //此方法使day的数值每按一次按钮加1
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
+  hangdScroll:function(res){
+    console.log(res)
 
   },
 
@@ -27,8 +16,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
 
   },
 
@@ -78,9 +65,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title:"这是我要分享的小程序"
-    }
 
   }
 })

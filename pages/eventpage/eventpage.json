@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-event":"/component/my-event/my-event"
+  }
+}

@@ -1,24 +1,27 @@
-// pages/home/home.js
+// pages/wxmlif/wxmlif.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
+    message:'今天天气真好！',
+    isShow:false,
+    score:55,
+    ifShow:false
+
 
   },
-  //跳转到详情方法执行
-  gotoDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=首页',
-    })
-
-  },
-  //此方法使day的数值每按一次按钮加1
-  addNum(){
+  //isShow切换
+  changeShow(){
     this.setData({
-      day:this.data.day+1
+      isShow:!this.data.isShow
+    })
+  },
+  //score变化
+  changeScore(){
+    this.setData({
+      score:this.data.score+5
     })
 
   },
@@ -27,8 +30,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
 
   },
 
@@ -78,9 +79,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title:"这是我要分享的小程序"
-    }
 
   }
 })

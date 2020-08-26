@@ -1,25 +1,12 @@
-// pages/home/home.js
+// pages/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
-
-  },
-  //跳转到详情方法执行
-  gotoDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=首页',
-    })
-
-  },
-  //此方法使day的数值每按一次按钮加1
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
+    name:"",
+    age:"",
 
   },
 
@@ -27,8 +14,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
+    console.log(options)
+    var name=options.name
+    var age= options.age
+    this.setData({
+      name:name,
+      age:age
+    })
 
   },
 
@@ -57,6 +49,17 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    //1、获取页面对象
+    var pages= getCurrentPages()
+    //console.log(pages)
+    var day= pages[0].data.day
+    const home=pages[pages.length-2]
+    console.log(day)
+    //2、调用页面对象的setData方法
+    home.setData({
+      day:100
+    })
+
 
   },
 
@@ -78,9 +81,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title:"这是我要分享的小程序"
-    }
 
   }
 })

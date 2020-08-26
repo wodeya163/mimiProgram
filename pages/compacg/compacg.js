@@ -1,25 +1,27 @@
-// pages/home/home.js
+// pages/compacg/compacg.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
-
-  },
-  //跳转到详情方法执行
-  gotoDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=首页',
-    })
-
-  },
-  //此方法使day的数值每按一次按钮加1
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
+    title:['第一个标题','第二个标题','第三标题'],
+    content:['内容1','内容2','内容3'],
+    students:[{
+      name:'张三',
+      age:35,
+      gender:'男'
+    },
+    {
+      name:'李二婶',
+      age:45,
+      gender:'女'
+    },
+    {
+    name:'王小二',
+    age:25,
+    gender:'男'
+    },]
 
   },
 
@@ -27,8 +29,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
 
   },
 
@@ -78,9 +78,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title:"这是我要分享的小程序"
-    }
 
   }
 })

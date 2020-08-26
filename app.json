@@ -1,7 +1,30 @@
 {
   "pages": [
+    "pages/detail/detail",
+    "pages/login/login",
     "pages/home/home",
     "pages/about/about"
   ],
-  "sitemapLocation": "sitemap83.json"
+  "sitemapLocation": "sitemap83.json",
+  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/login/login",
+        "text": "登录"
+         
+        
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+        
+        
+      },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于"
+      
+    }]
+  }
 }

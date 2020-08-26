@@ -2,3 +2,5 @@
 <text>上班第{{day}}天</text>
 <button size="mini" type="primary" bindtap="addNum">增加</button>
 <view>数据绑定</view>
+<navigator url="/pages/detail/detail?name=张淑和&age=45">跳转到detail</navigator>
+<button size="mini" type="primary" bindtap="gotoDetail">跳转到详情</button>

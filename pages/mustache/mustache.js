@@ -1,24 +1,22 @@
-// pages/home/home.js
+// pages/mustache/mustache.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
+    message:'今天不会下雨',
+    firstname:'张',
+    lastname:'淑和',
+    age:25,
+    nowtime:new Date().toLocaleString(),
+    isActive:false
+
 
   },
-  //跳转到详情方法执行
-  gotoDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=首页',
-    })
-
-  },
-  //此方法使day的数值每按一次按钮加1
-  addNum(){
+  changeSize(){
     this.setData({
-      day:this.data.day+1
+      isActive:!this.data.isActive
     })
 
   },
@@ -27,8 +25,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
+    setInterval(()=>{
+      this.setData({
+        nowtime:new Date().toLocaleString()
+
+      })
+    },1000)
 
   },
 
@@ -78,9 +80,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title:"这是我要分享的小程序"
-    }
 
   }
 })

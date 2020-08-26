@@ -1,25 +1,39 @@
-// pages/home/home.js
+// pages/for/for.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    day:0
-
-  },
-  //跳转到详情方法执行
-  gotoDetail(){
-    wx.navigateTo({
-      url: '/pages/detail/detail?title=首页',
-    })
-
-  },
-  //此方法使day的数值每按一次按钮加1
-  addNum(){
-    this.setData({
-      day:this.data.day+1
-    })
+    students: [
+      {
+        id: 1,
+        name: "张三",
+        age: 35
+      },
+      {
+        id: 2,
+        name: "李四",
+        age: 65
+      },
+      {
+        id: 3,
+        name: "王二",
+        age: 55
+      },
+      {
+        id: 4,
+        name: "刘小光",
+        age: 45
+      },
+      {
+        id: 5,
+        name: "李大个",
+        age: 25
+      },
+    ],
+    str:"今天的天气真好",
+    number:20
 
   },
 
@@ -27,8 +41,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    
 
   },
 
@@ -78,9 +90,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return{
-      title:"这是我要分享的小程序"
-    }
 
   }
 })

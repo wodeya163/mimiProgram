@@ -1,0 +1,26 @@
+<!--pages/wxmlif/wxmlif.wxml-->
+<!--wxml中if条件判断-->
+<view>
+    <view class="viewShow" wx:if="{{isShow}}">
+    {{message}}
+    </view>
+    <button type="primary" bind:tap="changeShow">切换显示</button>
+</view>
+<!--wxml中if-elif-else条件判断-->
+<view>
+    <view class="viewShow" wx:if="{{score>95}}">优秀</view>
+    <view class="viewShow" wx:elif="{{score>80}}">良好</view>
+    <view class="viewShow" wx:elif="{{score>60}}">及格</view>
+    <view class="viewShow" wx:else>不及格</view>
+    <button type="primary" bind:tap="changeScore">分数变化</button>
+</view>
+<view>
+    <view wx:if="{{ifShow}}">科技是如何改变世界的</view>
+    <view hidden="{{false}}">科技是如何改变世界的</view> 
+    <view>科技是这样改变世界的</view>
+</view>
+    
+
+  
+
+  

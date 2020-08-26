@@ -1,0 +1,2 @@
+<!--component/my-counter/my-counter.wxml-->
+<view>这是一个组件对象:{{counter}}</view>
